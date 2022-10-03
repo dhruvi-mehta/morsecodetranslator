@@ -1,0 +1,329 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 120px 90px 740px;
+    padding: 0;
+    height: 100vh;
+    border: 10px solid black;
+}
+
+.box {
+    color: black;
+    text-align: center;
+    border-bottom: 10px solid black;
+    width: 99%;
+    padding-bottom: 3px;
+}
+
+#name {
+    font-size: 40px;
+    padding-top: 25px;
+}
+
+#in {    
+    width: 99%;
+    height: 99%;
+    outline: none;
+    resize: none;
+    border: none;
+    /* top: 90px; */
+    font-size: 20px;
+
+}
+
+#out {
+    width: 99%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 30px;
+}
+
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.6em;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 gray;
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px gray;
+}
+
+#code {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#info {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+#codechart {
+    position: absolute;
+    right: 30px;
+    top: 24em;
+    display: none;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        font-family: 'Roboto Mono', monospace;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    #grid-container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 80px 70px 498px;
+        padding: 0;
+        height: 100vh;
+        border: 10px solid black;
+    }
+    
+    .box {
+        color: black;
+        text-align: center;
+        border-bottom: 10px solid black;
+        width: 98%;
+        padding-bottom: 3px;
+    }
+    
+    #name {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+    
+    #in {    
+        width: 98%;
+        height: 99%;
+        outline: none;
+        resize: none;
+        border: none;
+        /* top: 90px; */
+        font-size: 18px;
+    
+    }
+    
+    #out {
+        width: 98%;
+        height: 100%;
+        outline: none;
+        resize: none;
+        border: none;
+        font-size: 28px;
+    }
+    
+    button {
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 0.6em;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        align-self: center;
+        font-size: 10px;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+        transition: all 150ms ease-in-out;
+    }
+    
+    button:hover {
+        box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px gray;
+    }
+    
+    #code {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #info {
+        height: 40px;
+        width: auto;
+        position: absolute;
+        right: 0;
+        padding-right: 30px;
+        bottom: 0;
+        padding-bottom: 10px;
+    }
+    
+    #codechart {
+        position: absolute;
+        right: 30px;
+        top: 20em;
+        height: 17em;
+        display: none;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    body {
+        font-family: 'Roboto Mono', monospace;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    #grid-container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 95px 67px 659px;
+        padding: 0;
+        height: 100vh;
+        border: 10px solid black;
+    }
+    
+    .box {
+        color: black;
+        text-align: center;
+        border-bottom: 10px solid black;
+        width: 95%;
+        padding-bottom: 3px;
+    }
+    
+    #name {
+        font-size: 23px;
+        padding-top: 31px;
+    }
+    
+    #in {    
+        width: 98%;
+        height: 99%;
+        outline: none;
+        resize: none;
+        border: none;
+        /* top: 90px; */
+        font-size: 15px;
+    
+    }
+    
+    #out {
+        width: 98%;
+        height: 100%;
+        outline: none;
+        resize: none;
+        border: none;
+        font-size: 26px;
+    }
+    
+    button {
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 0.6em;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        align-self: center;
+        font-size: 12px;
+        line-height: 1;
+        margin: 5px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+        transition: all 150ms ease-in-out;
+    }
+    
+    button:hover {
+        box-shadow: 0 0 10px 0 gray inset, 0 0 10px 4px gray;
+    }
+    
+    #code {
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    #info {
+        height: 33px;
+        width: auto;
+        position: absolute;
+        right: 0;
+        padding-right: 30px;
+        bottom: 0;
+        padding-bottom: 10px;
+    }
+    
+    #codechart {
+        position: absolute;
+        right: 30px;
+        top: 24em;
+        height: 17em;
+        display: none;
+    }
+
+}
