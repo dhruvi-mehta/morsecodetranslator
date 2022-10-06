@@ -151,4 +151,27 @@ button.onclick = function() {
         document.getElementById("in").value = "";
         document.getElementById("out").value = "";
     })
+
+
+function wordToGradient(word) {
+	// return empty string if textbox does not include letters
+	if (!word.match(/[a-zA-Z]+/)) {
+		return "";
+	}
+
+	// if textbox value is just a single letter, return a solid color
+	if (word.length === 1) {
+		return GRADIENT_MAP.find((i) => i.letters.includes(word)).color;
+	}
+
+	const splitWord = word
+		.toLowerCase()
+		.split("")
+		.filter((letter) => letter.match(/[a-zA-Z]+/));
+	const colors = splitWord.map((letter) => {
+		return GRADIENT_MAP.find((i) => i.letters.includes(letter)).color;
+	});
+	return `linear-gradient(90deg, ${colors.join(", ")})`;
+}
+
     

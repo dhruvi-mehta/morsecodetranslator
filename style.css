@@ -1,8 +1,8 @@
 body {
-    font-family: 'Roboto' regular;
+    font-family: 'Roboto' bold;
     margin: 0;
     padding: 0;
-    font-family: 'Pinyon Script', cursive;
+    overflow-y: hidden;
 }
 
 html {
@@ -15,20 +15,27 @@ html {
     grid-template-rows: 120px 90px 740px;
     padding: 0;
     height: 100vh;
+    color: white;
     border: 10px solid black;
+    background-color: black;
 }
 
 .box {
     color: black;
     text-align: center;
-    border-bottom: 10px solid black;
+    border-bottom: 1px solid white;
     width: 99%;
     padding-bottom: 3px;
+    backgroun-color: black;
 }
 
 #name {
-    font-size: 40px;
-    padding-top: 25px;
+    font-family: fenwick,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: white;
+
 }
 
 #in {    
@@ -38,7 +45,9 @@ html {
     resize: none;
     border: none;
     /* top: 90px; */
-    font-size: 20px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
 
 }
 
@@ -48,13 +57,15 @@ html {
     outline: none;
     resize: none;
     border: none;
-    font-size: 30px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
 }
 
 button {
     box-sizing: border-box;
     appearance: none;
-    background-color: transparent;
+    background-color: whitesmoke;
     border: 2px solid black;
     border-radius: 0.6em;
     color: black;
@@ -101,7 +112,7 @@ button:hover {
 #codechart {
     position: absolute;
     right: 30px;
-    top: 24em;
+    top: 10em;
     display: none;
 }
 
@@ -160,8 +171,11 @@ button:hover {
         resize: none;
         border: none;
         font-size: 28px;
+        background-color:black;
+        color: black;
     }
-    
+
+
     button {
         box-sizing: border-box;
         appearance: none;
