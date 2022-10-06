@@ -62,6 +62,11 @@ html {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 button {
     box-sizing: border-box;
     appearance: none;
@@ -99,10 +104,7 @@ button:hover {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 #info {
     height: 40px;
@@ -179,6 +181,11 @@ a {
         background-color:black;
         color: black;
     }
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
     button {
@@ -292,6 +299,12 @@ a {
         border: none;
         font-size: 26px;
     }
+
+    a {
+    text-decoration: none;
+    color: black;
+}
+
     
     button {
         box-sizing: border-box;
